@@ -7,7 +7,6 @@ const mongoose = require("mongoose");
 
 //import middleware
 const morgan = require("morgan");
-const passport = require("./middleware/passport");
 const notFoundMiddleware = require("./middleware/notFound");
 const errorHandlerMiddleware = require("./middleware/errorHandler");
 
@@ -62,7 +61,6 @@ const openapiSpecification = swaggerJsdoc(options);
 app.use(express.static("./public"));
 app.use(express.json());
 app.use(morgan("common"));
-app.use(passport.initialize());
 
 //routes
 app.use("/api/v1/auth", authRouter);

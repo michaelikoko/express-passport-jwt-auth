@@ -1,6 +1,5 @@
 const express = require("express");
 const router = express.Router();
-const passport = require("../middleware/passport");
 const {
   createUser,
   listUsers,
@@ -217,6 +216,6 @@ router
  */
 router
   .route("/whoami")
-  .get(passport.authenticate(["jwt", "basic"], { session: false }), whoami);
+  .get(whoami);
 
 module.exports = router;
