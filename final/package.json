@@ -25,7 +25,6 @@
     "mongoose-unique-validator": "^5.0.1",
     "morgan": "^1.10.0",
     "passport": "^0.7.0",
-    "passport-discord": "^0.1.4",
     "passport-http": "^0.3.0",
     "passport-jwt": "^4.0.1",
     "swagger-jsdoc": "^6.2.8",
